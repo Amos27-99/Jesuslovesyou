@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="includes/materialize.min.css">
+    <script defer src="https://friconix.com/cdn/friconix-0.1885.js"> </script>
+    <title></title>
+    <style media="screen">
+      @import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+      body{
+        font-family: 'Quicksand', sans-serif;
+      }
+      nav{
+        color:white !important;
+      }
+      nav :hover{
+        color: sienna;
+      }
+      .carousel{
+        height: 100vh;
+      }
+      .about-content{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+      .about-pic img{
+        width: 100%;
+        height: 100%;
+        min-width: 500px;
+        min-height: 200px;;
+      }
+      .projects{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+      }
+      .about-text{
+        padding: 10px;
+        font-weight: bold;
+      }
+      .about-me{
+       
+      }
+      .card{
+      width: 300px;
+    }
+    .main-title{
+      vertical-align: middle;
+      height: 600px;
+    }
+    #slide-1 .color-overlay{
+      height: 100%;
+      background-color: rgba(29, 172, 57, 0.5);
+      padding-bottom: 30px;
+      
+    }
+    #slide-2 .color-overlay{
+      height: inherit;
+      background-color: rgba(172, 29, 141, 0.5);
+    }
+    #slide-3 .color-overlay{
+      height: inherit;
+      background-color: rgba(196, 135, 22, 0.5);
+    }
+    #slide-4 .color-overlay{
+      height: inherit;
+      background-color: rgba(29, 127, 172, 0.5);
+    }
+    #slide-1{
+      background-image: url(includes/amos3.jpg);
+      background-size: cover;
+      background-attachment: fixed;
+      background-position:-90% center;
+      width:100%;
+      margin: 0 !important;
+    }
+    #slide-2{
+      background-image: url(includes/amos4.jpg);
+      background-size: cover;
+      background-attachment: fixed;
+      background-position:center center;
+    }
+    #slide-3{
+      background-image: url(includes/amos5.jpg);
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: -90% center;
+    }
+    #slide-4{
+      background-image: url(includes/amos6.jpg);
+      background-size: cover;
+      background-attachment: fixed;
+      background-position:center center;
+    }
+    .proj-title, .about-title{
+      margin-top: 35px;
+      margin-bottom: 40px;
+      font-weight: bold;
+    }
+    .main-slider{
+      
+    }
+    .logo-img{
+      width: 60px;
+      height: 60px;
+    }
+    .social-links{
+      width: fit-content;
+      color: seashell;
+    }
+    .social-links :hover{
+      background-color: sienna;
+    }
+    .info-list{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      font-size: larger;
+    }
+    .footer-head{
+      margin-bottom: 50px;
+    }
+    </style>
+  </head>
+  <body>
+
+    
+    <ul class="sidenav" id="mobile-demo">
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#contact">Contacts</a></li>
+      <li><a href="#projects">Podcasts / Vedios</a></li>
+      <li><a href="#music">My Music</a></li>
+    </ul>
+
+    <div class="navbar-fixed">
+      <nav class="black">
+        <div class="nav-wrapper">
+          <a href="#!" class="brand-logo"><img class="logo-img" src="includes/amos2.png" alt=""></a>
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#projects">Podcasts / Vedios</a></li>
+            <li><a href="#music">My Music</a></li>
+            <li><a href="#contact">Contacts</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    
+
+
+    <div class="carousel carousel-slider center main-slider">
+
+      
+        <!-- <div class="carousel-fixed-item center">
+          <a class="btn waves-effect white grey-text darken-text-2">button</a>
+        </div> -->
+        <div class="carousel-item  white-text" id="slide-1" href="#one!">
+          <div class="color-overlay valign-wrapper">
+            <div class="container ">
+              <h2>My name is</h2>
+            <h3 class="white-text">Amos Ruchochoro</h3>
+            </div>
+            
+          </div>
+        </div>
+
+        <div class="carousel-item amber white-text" id="slide-2" href="#two!">
+          <div class="color-overlay valign-wrapper">
+            <div class="container ">
+              <h2>My name is</h2>
+              <h3 class="white-text">Amos Ruchochoro</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item green white-text" id="slide-3" href="#three!">
+          <div class="color-overlay valign-wrapper">
+            <div class="container ">
+              <h2>My name is</h2>
+              <h3 class="white-text">Amos Ruchochoro</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item blue white-text" id="slide-4" href="#four!">
+          <div class="color-overlay valign-wrapper">
+            <div class="container ">
+              <h2>My name is</h2>
+              <h3 class="white-text">Amos Ruchochoro</h3>
+            </div>
+          </div>
+        </div>
+
+    </div>
+
+    <div class="container about-me" id="about">
+
+      <h3 class="center-align about-title">About Me</h3>
+
+      <div class="row about-content">
+
+        <div class="about-pic  ">
+
+          <img src="includes/home.JPG" class="" alt="">
+
+        </div>
+
+        <div class="about-text ">
+          <!-- this part is for information -->
+          <p>l am a Child of God, on fire for Jesus. In other words, l am a Witness send forth by Jesus Christ to proclaim the Goodnews to the whole world so that people can be saved from death or l can say damnation. My heartcry is that all people may know about Jesus and be saved from sin which causes death. l also serve in music ministry , that is playing piano,acostic guitar and sometimes singing. All this l do for the glory of God. </p>
+          <blockquote><h3 style="color: red;">And He said to them, "Go into all the world and preach the gospel to every creature.(MARK 16:15) </h3></blockquote>
+         </div>
+
+        <div class="about-text ">
+          <!-- this part is for information -->
+          <p><strong>People are dying everywhere and heading towards hell , so this is actually an emergency and all believers around the world should wake up , be on fire for Jesus and share Jesus with someone today. This is not for pastors only but for all believers around the world. This website actually is a way to tell people about Jesus.<em>For I am not ashamed of the gospel of Christ, for it is the power of God to salvation for everyone who believes, for the Jew first and also for the Greek.</em> </strong></p>
+                    
+        </div>
+        
+      </div>
+
+    </div>
+
+    <div class="my-projects container" id="projects">
+
+      <h3 class="center-align  proj-title">Jesus Is Calling Today!</h3>
+
+      <div class="projects">
+        <div class="card" id="card-1">
+            <div class="card-image">
+              <img src="includes/AB.JPG">
+              <span class="card-title">He is Eternal</span>
+            </div>
+            <div class="card-content">
+              <!-- this part is for information -->
+              <p>There is more to life than being bound by depression, anger, addiction or even death. JESUS CHRIST is the essence of life, He came to give us life and life in abundance. Join Amos and Blessing as they talk about Jesus as eternal life.</p>
+            </div>
+            <div class="card-action">
+              <a href="https://open.spotify.com/episode/5TvTmWoknz5yc9IWipMlAd?si=0E1ekixxQpSjmpJOJzoInw" target="_blank" rel="noopener noreferrer">Click to listen.</a>
+            </div>
+        </div>
+
+        <div class="card" id="card-1">
+              <div class="card-image">
+                <img src="includes/amos6.jpg">
+                <span class="card-title">JesusTheGarment</span>
+              </div>
+              <div class="card-content">
+                <!-- this part is for information -->
+                <p>Its all about Jesus , and in this episode l felt that the Lord wanted us to know that we need him, we need to be clothed in Him. Without Him we can do nothing, without Him we are naked.....</p>
+              </div>
+              <div class="card-action">
+                <a href="https://anchor.fm/youth-for-jesus-christ/episodes/Jesus-The-Garment-Matthew-22-ehetmb/a-a2qv018" target="_blank" rel="noopener noreferrer">Click to listen.</a>
+              </div>
+        </div>
+
+        <div class="card" id="card-1">
+              <div class="card-image">
+                <img src="includes/icon.jpg">
+                <span class="card-title">He is Savior</span>
+              </div>
+              <div class="card-content">
+                <!-- this part is for information -->
+                <p>Jesus did not come for the righteous but He came for sinners, He comes to call sinners to Repentance.
+                  Join blessing and Amos as they talk about the Savior Jesus Christ...</p>
+              </div>
+              <div class="card-action">
+                <a href="https://youtu.be/65tqhJgzUzU"target="_blank" rel="noopener noreferrer">Click to Listen</a>
+              </div>
+        </div>
+
+        <div class="card" id="card-1">
+              <div class="card-image">
+                <img src="includes/icon.jpg">
+                <span class="card-title">Abiding In Jesus</span>
+              </div>
+              <div class="card-content">
+                <!-- this part is for information -->
+                <p>You can never walk in Darkness following Jesus... The bible says that man loved darkness because their deeds were evil , so Jesus has come to destroy the works of the devil(darkness) in so doing bringing light to The World.... </p>
+              </div>
+              <div class="card-action">
+                <a href="https://www.breaker.audio/yfjc/e/69665353"target="_blank" rel="noopener noreferrer">Click to listen</a>
+              </div>
+        </div>
+
+        <!-- <div class="card" id="card-1">
+          <div class="card-image">
+            <img src="includes/foto2.jpg">
+            <span class="card-title">Card Title</span>
+          </div>
+          <div class="card-content">
+            <-- this part is for information -->
+            <!-- <p>I am a very simple card. I am good at containing small bits of information.
+            I am convenient because I require little markup to use effectively.</p>
+          </div>
+          <div class="card-action">
+            <a href="#">This is a link</a>
+          </div>
+       </div>  -->
+
+      </div>
+
+      <ul class="collection" id="music">
+
+        <h3 class="center-align  proj-title">My Up Coming Music</h3>
+
+        <li class="collection-item avatar">
+          <img src="includes/icon.jpg" alt="" class="circle">
+          <span class="title">Oh Jesus</span>
+          <p>This is the first song l wrote and recorded.<br>
+            Email me for the song.
+          </p>
+          <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+        </li>
+        <li class="collection-item avatar">
+          <img src="includes/icon.jpg" alt="" class="circle">
+          <span class="title">Yawheh</span>
+          <p>This is the second song l wrote but have not recorded it yet.
+          </p>
+          <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+        </li>
+        <li class="collection-item avatar">
+          <img src="includes/icon.jpg" alt="" class="circle">
+          <span class="title">You are beautiful</span>
+          <p>This is the third song l wrote but have not recorded it yet.
+          </p>
+          <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+        </li>
+        <li class="collection-item avatar">
+          <img src="includes/icon.jpg" alt="" class="circle">
+          <span class="title">l love you Jesus</span>
+          <p>This is a song l wrote year 2020 but has not been recorded yet.
+          </p>
+          <a href="" class="secondary-content"><i class="material-icons">grade</i></a>
+        </li>
+      </ul>
+
+      
+
+
+
+    </div>
+
+    <footer class="page-footer grey darken-4 white-text" id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12 info-list">
+            <h5 class="white-text footer-head">Thank you for visiting!</h5>
+            <p><strong>Address :</strong> 238 Songling Rd, Laoshan, Qingdao </p>
+            <p><strong>Phone Number :</strong> +86 176 6403 7975</p>
+            <p><strong>Email :</strong> aruchochoro@gmail.com</p>
+          </div>
+
+          
+          <div class="col l4 offset-l2 s12 social">
+            <h5 class="white-text">My Social Links</h5>
+            <p>Music covers and Bible </p>
+            <ul class="">
+              <li><a href="https://www.facebook.com/100017184186621/videos/507008913215244/ " target="_blank" rel="noopener noreferrer"><i class=" fi-3x fi-snsuxl-facebook social-links"></i><p> </p></a></li>
+              <li><a href="https://twitter.com/AmosWoods5/status/1259465617997889537/photo/1" target="_blank" rel="noopener noreferrer"><i class="fi-3x fi-snsuxl-twitter social-links" ></i><p></p></li></a>
+              <li><a href="https://www.instagram.com/tv/CIOROqxpJrB/?utm_source=ig_web_copy_link" target="_blank" rel="noopener noreferrer"><i class="fi-3x fi-snsuxl-instagram social-links" ></i><p> </p></li></a>
+              <li><a href="https://github.com/Amos27-99/quzler.git" target="_blank" rel="noopener noreferrer"><i class="fi-3x fi-snsuxl-github social-links"></i><p></p></li></a>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container">
+        © 2020 Copyright Text
+        </div>
+      </div>
+    </footer>
+
+
+
+  <script src="includes/jquery-3.4.1.min.js" charset="utf-8"></script>
+  <script src="includes/materialize.js" charset="utf-8"></script>
+  <script src="includes/init.js" charset="utf-8"></script>
+  <script>
+    let anchorlinks = document.querySelectorAll('a[href^="#"]')
+ 
+ for (let item of anchorlinks) { // relitere 
+     item.addEventListener('click', (e)=> {
+         let hashval = item.getAttribute('href')
+         let target = document.querySelector(hashval)
+         target.scrollIntoView({
+             behavior: 'smooth',
+             block: 'start'
+         })
+         history.pushState(null, null, hashval)
+         e.preventDefault()
+     })
+ }
+  </script>
+  </body>
+</html>
